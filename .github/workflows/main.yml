@@ -19,10 +19,7 @@ jobs:
         client-id: ${{ secrets.CLIENTID }}
         tenant-id: ${{ secrets.TENANTID }}
         subscription-id: ${{ secrets.SUBSCRIPTIONID }}
-     - name: Terraform fmt
-       id: fmt
-       run: terraform fmt -check
-       continue-on-error: true
+     
 
      - name: Terraform Init
        id: init
